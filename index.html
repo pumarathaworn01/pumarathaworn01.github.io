@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pumara Thaworn — Digital Marketing & AI Automation</title>
+<meta name="description" content="Portfolio of Pumara Thaworn: digital marketing strategy, SEO/AEO/GEO, AI tools and Python automation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Sarabun:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root { --green:#0B7A5E; --green-d:#085F49; --green-l:#E8F4EF; --ink:#1a1a1a; --muted:#5c5c5c; --line:#e6e6e6; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  html { scroll-behavior:smooth; }
+  body { font-family:"Poppins","Sarabun",system-ui,sans-serif; color:var(--ink); line-height:1.65; background:#fff; }
+  a { color:var(--green); text-decoration:none; }
+  .wrap { max-width:1080px; margin:0 auto; padding:0 24px; }
+
+  nav { position:sticky; top:0; z-index:10; background:rgba(255,255,255,.95); backdrop-filter:blur(6px); border-bottom:1px solid var(--line); }
+  nav .wrap { display:flex; align-items:center; justify-content:space-between; height:62px; }
+  nav .logo { font-weight:700; color:var(--ink); letter-spacing:.5px; }
+  nav .links { display:flex; gap:26px; font-size:14.5px; }
+  nav .links a { color:var(--ink); }
+  nav .links a:hover { color:var(--green); }
+
+  .hero { background:var(--green); color:#fff; }
+  .hero .wrap { display:grid; grid-template-columns:1fr 240px; gap:48px; align-items:center; padding-top:72px; padding-bottom:72px; }
+  .hero .eyebrow { font-size:14px; font-weight:500; color:#cfeadf; letter-spacing:1.5px; text-transform:uppercase; }
+  .hero h1 { font-size:46px; line-height:1.15; font-weight:700; margin:10px 0 16px; }
+  .hero p { font-size:17px; color:#eaf6f1; max-width:600px; }
+  .hero .cta { margin-top:28px; display:flex; gap:12px; flex-wrap:wrap; }
+  .btn { display:inline-block; padding:11px 22px; border-radius:8px; font-weight:600; font-size:15px; }
+  .btn.solid { background:#fff; color:var(--green); }
+  .btn.ghost { border:1.5px solid rgba(255,255,255,.7); color:#fff; }
+  .hero img { width:240px; height:300px; object-fit:cover; border-radius:12px; display:block; }
+
+  section { padding:72px 0; }
+  section.alt { background:#fafafa; }
+  h2 { font-size:28px; font-weight:700; margin-bottom:8px; }
+  h2 + .sub { color:var(--muted); margin-bottom:36px; }
+
+  .grid { display:grid; gap:20px; }
+  .g3 { grid-template-columns:repeat(3,1fr); }
+  .g2 { grid-template-columns:repeat(2,1fr); }
+  .card { border:1px solid var(--line); border-radius:12px; padding:24px; background:#fff; }
+  .card h3 { font-size:17px; font-weight:600; margin-bottom:8px; }
+  .card p { color:#333; font-size:15px; }
+  .card ul { list-style:none; font-size:15px; color:#333; }
+  .card li { padding-left:16px; position:relative; margin-top:4px; }
+  .card li::before { content:""; position:absolute; left:0; top:.7em; width:6px; height:6px; border-radius:50%; background:var(--green); }
+  .tag { display:inline-block; font-size:12.5px; font-weight:500; color:var(--green-d); background:var(--green-l); border-radius:999px; padding:3px 10px; margin:12px 6px 0 0; }
+  .label { font-size:12.5px; font-weight:600; color:var(--green); letter-spacing:1px; text-transform:uppercase; margin-bottom:6px; }
+
+  .brands { display:flex; flex-wrap:wrap; gap:12px; margin-top:8px; }
+  .brands span { border:1px solid var(--line); border-radius:10px; padding:14px 22px; font-weight:600; font-size:16px; background:#fff; }
+
+  .job { display:grid; grid-template-columns:200px 1fr; gap:24px; padding:24px 0; border-top:1px solid var(--line); }
+  .job:first-of-type { border-top:none; }
+  .job .when { color:var(--muted); font-weight:500; font-size:15px; }
+  .job h3 { font-size:18px; font-weight:600; }
+  .job .role { color:var(--green); font-weight:500; margin-bottom:8px; }
+  .job ul { padding-left:18px; color:#333; font-size:15px; }
+  .job li { margin-top:4px; }
+
+  .tools { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+  .tools p { font-size:15px; color:#333; }
+
+  footer { background:#111; color:#ddd; padding:56px 0; }
+  footer h2 { color:#fff; }
+  footer .contact { display:flex; gap:28px; flex-wrap:wrap; margin-top:16px; font-size:16px; }
+  footer a { color:#8fd6bb; }
+  footer small { display:block; margin-top:36px; color:#888; }
+
+  @media (max-width:820px) {
+    .hero .wrap { grid-template-columns:1fr; padding-top:48px; padding-bottom:48px; }
+    .hero img { width:180px; height:225px; order:-1; }
+    .hero h1 { font-size:34px; }
+    .g3, .g2, .tools { grid-template-columns:1fr; }
+    .job { grid-template-columns:1fr; gap:4px; }
+    nav .links { display:none; }
+  }
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <a class="logo" href="#top">PUMARA THAWORN</a>
+  <div class="links"><a href="#projects">Projects</a><a href="#brands">Brands</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+  <div>
+    <div class="eyebrow">Digital Marketing &amp; AI Automation</div>
+    <h1>Marketing strategy, built with AI and code.</h1>
+    <p>I'm Pumara, a digital marketer from Chiang Mai with 3+ years of agency experience. I plan campaigns for brands, and I build the tools behind them: websites, API integrations and automated alert systems in Python, with AI in every step of the workflow.</p>
+    <div class="cta">
+      <a class="btn solid" href="#projects">See my work</a>
+      <a class="btn ghost" href="mailto:Pumarathaworn01@gmail.com">Contact me</a>
+    </div>
+  </div>
+  <img src="photo.jpg" alt="Pumara Thaworn" onerror="this.style.display='none'">
+</div></header>
+
+<section id="projects"><div class="wrap">
+  <h2>Featured projects</h2>
+  <p class="sub">Things I built myself, from idea to working system.</p>
+  <div class="grid g3">
+    <div class="card">
+      <div class="label">Automation</div>
+      <h3>Stock Signal Alert System</h3>
+      <p>A Python system that pulls market data through an API, analyses trading signals and sends alerts to Telegram automatically.</p>
+      <span class="tag">Python</span><span class="tag">REST API</span><span class="tag">Telegram Bot API</span>
+    </div>
+    <div class="card">
+      <div class="label">Automation</div>
+      <h3>Tomorn Crypto Trading Bot</h3>
+      <p>A BTC/USDT bot that finds signals from 5 strategies, sends Telegram alerts, paper-trades with fee-aware risk control, and shows results on a live web dashboard. Backtested over 5 years and 5 coins.</p>
+      <span class="tag">Python</span><span class="tag">Binance API</span><span class="tag">Telegram Bot API</span><span class="tag">Backtesting</span>
+      <p style="margin-top:14px"><a href="https://github.com/pumarathaworn01/tomorn-trading-bot">View code on GitHub →</a></p>
+    </div>
+    <div class="card">
+      <div class="label">Web</div>
+      <h3>BUNJONGKID Company Website</h3>
+      <p>A new website for a creative agency: responsive on desktop, tablet and mobile, with a portfolio of 64 client projects and galleries pulled from Behance.</p>
+      <span class="tag">Python</span><span class="tag">AI-assisted development</span><span class="tag">Behance</span>
+    </div>
+  </div>
+</div></section>
+
+<section class="alt" id="brands"><div class="wrap">
+  <h2>Brands I've worked on</h2>
+  <p class="sub">Campaigns and content planned and produced at BUNJONGKID.</p>
+  <div class="brands">
+    <span>Zoetis</span><span>Chaixi Plus</span><span>MUJI</span><span>Gingganbai</span><span>CHO</span><span>UCHI</span>
+  </div>
+  <p class="sub" style="margin:24px 0 0">Earlier, at IMAZMAKER, I led marketing for clients in education, FMCG, skincare and real estate.</p>
+</div></section>
+
+<section id="experience"><div class="wrap">
+  <h2>Experience</h2>
+  <p class="sub">Agency marketing, from strategy to execution.</p>
+  <div class="job">
+    <div class="when">2025 – Present</div>
+    <div>
+      <h3>BUNJONGKID (Creative &amp; Branding Agency)</h3>
+      <div class="role">Digital Marketing &amp; Web Developer</div>
+      <ul>
+        <li>Rebuilt the agency's company website with responsive layouts and a 64-project portfolio.</li>
+        <li>Plan and produce campaigns and content for major brands including Zoetis, Chaixi Plus, MUJI and Gingganbai.</li>
+        <li>Bring AI tools into research, copywriting, design review and production to deliver faster.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="job">
+    <div class="when">May 2023 – 2025</div>
+    <div>
+      <h3>IMAZMAKER Co., Ltd.</h3>
+      <div class="role">Marketing / Strategic Planner / Project Manager</div>
+      <ul>
+        <li>Led marketing for clients in education, FMCG, skincare and real estate, from client meetings to evaluation.</li>
+        <li>Wrote marketing, communication and business plans based on brand, competitor and environmental analysis.</li>
+        <li>Ran online and offline market research and reported results with data tools.</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<section class="alt" id="skills"><div class="wrap">
+  <h2>Skills &amp; tools</h2>
+  <p class="sub">Where marketing, search and automation meet.</p>
+  <div class="grid g2" style="margin-bottom:20px">
+    <div class="card">
+      <h3>Digital marketing</h3>
+      <ul><li>Marketing &amp; communication strategy</li><li>Competitor &amp; market research</li><li>Campaign planning &amp; content</li><li>Brand analysis &amp; reporting</li></ul>
+    </div>
+    <div class="card">
+      <h3>Search visibility</h3>
+      <ul><li>SEO: keyword research, on-page, technical</li><li>AEO: answer-ready content, FAQ &amp; schema</li><li>GEO: content structured for AI search citations</li></ul>
+    </div>
+    <div class="card">
+      <h3>AI &amp; automation</h3>
+      <ul><li>AI for research, analysis &amp; content</li><li>AI agents in daily workflows</li><li>Chatbots &amp; Telegram bot alerts</li><li>API integration &amp; scheduled automation</li></ul>
+    </div>
+    <div class="card">
+      <h3>Programming</h3>
+      <ul><li>Python (web, data, bots)</li><li>Web development with Python &amp; AI tools</li><li>REST APIs</li></ul>
+    </div>
+  </div>
+  <div class="tools">
+    <div class="card"><div class="label">Search &amp; social</div><p>Ahrefs · Wisesight · Google Keyword Planner · Google Trends · Similarweb · Facebook Ads Library</p></div>
+    <div class="card"><div class="label">Analytics</div><p>Google Analytics · Power BI · SPSS · EViews · Microsoft Office</p></div>
+    <div class="card"><div class="label">AI &amp; dev</div><p>Claude · ChatGPT · Codex · Python · Telegram Bot API</p></div>
+  </div>
+</div></section>
+
+<footer id="contact"><div class="wrap">
+  <h2>Let's work together</h2>
+  <p>Open to digital marketing roles where AI and technology make the work better.</p>
+  <div class="contact">
+    <a href="mailto:Pumarathaworn01@gmail.com">Pumarathaworn01@gmail.com</a>
+    <a href="tel:0984253259">098-425-3259</a>
+    <a href="https://github.com/pumarathaworn01">github.com/pumarathaworn01</a>
+    <span>Chiang Mai, Thailand</span>
+  </div>
+  <small>Education: B.Econ. (International Economics), Maejo University</small>
+</div></footer>
+
+</body>
+</html>
