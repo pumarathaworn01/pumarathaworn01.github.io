@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Sarabun:wght@400;600&display=swap" rel="stylesheet">
 <style>
-  :root { --green:#0B7A5E; --green-d:#085F49; --green-l:#E8F4EF; --ink:#1a1a1a; --muted:#5c5c5c; --line:#e6e6e6; }
+  :root { --green:#5F4B8B; --green-d:#4A3870; --green-l:#EFEAF8; --ink:#1a1a1a; --muted:#5c5c5c; --line:#e6e6e6; }
   * { box-sizing:border-box; margin:0; padding:0; }
   html { scroll-behavior:smooth; }
   body { font-family:"Poppins","Sarabun",system-ui,sans-serif; color:var(--ink); line-height:1.65; background:#fff; }
@@ -23,11 +23,11 @@
   nav .links a { color:var(--ink); }
   nav .links a:hover { color:var(--green); }
 
-  .hero { background:var(--green); color:#fff; }
+  .hero { background:linear-gradient(135deg,#523B83 0%,#6A4C9C 100%); color:#fff; }
   .hero .wrap { display:grid; grid-template-columns:1fr 240px; gap:48px; align-items:center; padding-top:72px; padding-bottom:72px; }
-  .hero .eyebrow { font-size:14px; font-weight:500; color:#cfeadf; letter-spacing:1.5px; text-transform:uppercase; }
+  .hero .eyebrow { font-size:14px; font-weight:500; color:#E9DFFB; letter-spacing:1.5px; text-transform:uppercase; }
   .hero h1 { font-size:46px; line-height:1.15; font-weight:700; margin:10px 0 16px; }
-  .hero p { font-size:17px; color:#eaf6f1; max-width:600px; }
+  .hero p { font-size:17px; color:#F3EEFC; max-width:600px; }
   .hero .cta { margin-top:28px; display:flex; gap:12px; flex-wrap:wrap; }
   .btn { display:inline-block; padding:11px 22px; border-radius:8px; font-weight:600; font-size:15px; }
   .btn.solid { background:#fff; color:var(--green); }
@@ -68,14 +68,14 @@
   footer { background:#111; color:#ddd; padding:56px 0; }
   footer h2 { color:#fff; }
   footer .contact { display:flex; gap:28px; flex-wrap:wrap; margin-top:16px; font-size:16px; }
-  footer a { color:#8fd6bb; }
+  footer a { color:#CBB8F0; }
   footer small { display:block; margin-top:36px; color:#888; }
 
 
   .stats { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-bottom:28px; }
-  .stats div { background:var(--green); color:#fff; border-radius:12px; padding:22px 24px; }
+  .stats div { background:linear-gradient(135deg,#523B83 0%,#6A4C9C 100%); color:#fff; border-radius:12px; padding:22px 24px; }
   .stats b { display:block; font-size:36px; line-height:1.1; }
-  .stats span { font-size:14px; color:#dff2ea; }
+  .stats span { font-size:14px; color:#ECE4FA; }
   .pgrid { display:grid; grid-template-columns:repeat(5,1fr); gap:12px; }
   .pcard { display:flex; flex-direction:column; gap:4px; border:1px solid var(--line); border-radius:10px; padding:16px; background:#fff; color:var(--ink); transition:border-color .15s, transform .15s; }
   .pcard:hover { border-color:var(--green); transform:translateY(-2px); }
@@ -118,7 +118,7 @@
 
 <nav><div class="wrap">
   <a class="logo" href="#top">PUMARA THAWORN</a>
-  <div class="links"><a href="#approach">Approach</a><a href="#cases">Case studies</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div>
+  <div class="links"><a href="index.html" style="color:var(--green);font-weight:600">← Overview</a><a href="#approach">Approach</a><a href="#cases">Case studies</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div>
 </div></nav>
 
 <header class="hero" id="top"><div class="wrap">
@@ -165,28 +165,28 @@
       <div class="kv"><div><b>8</b><span>SOPs written</span></div><div><b>1</b><span>controlled handoff point</span></div></div>
     </div>
     <div><svg class="flow" viewBox="0 0 520 330" xmlns="http://www.w3.org/2000/svg" font-family="Poppins, sans-serif" role="img" aria-label="Simplified to-be workflow across two departments with one handoff point">
-  <rect x="0" y="0" width="520" height="150" rx="10" fill="#F4FAF7" stroke="#D6EAE1"/>
+  <rect x="0" y="0" width="520" height="150" rx="10" fill="#F6F3FB" stroke="#E2DAF0"/>
   <rect x="0" y="175" width="520" height="150" rx="10" fill="#F7F7F7" stroke="#E3E3E3"/>
-  <text x="14" y="24" font-size="12" font-weight="600" fill="#085F49">CREDIT APPROVAL</text>
+  <text x="14" y="24" font-size="12" font-weight="600" fill="#4A3870">CREDIT APPROVAL</text>
   <text x="14" y="199" font-size="12" font-weight="600" fill="#555">WAREHOUSE</text>
   <g font-size="11" fill="#1a1a1a">
-    <rect x="14" y="50" width="104" height="54" rx="8" fill="#fff" stroke="#0B7A5E"/><text x="66" y="74" text-anchor="middle">Receive &amp;</text><text x="66" y="89" text-anchor="middle">check case</text>
-    <rect x="138" y="50" width="104" height="54" rx="8" fill="#fff" stroke="#0B7A5E"/><text x="190" y="74" text-anchor="middle">Verify</text><text x="190" y="89" text-anchor="middle">identity</text>
-    <rect x="262" y="50" width="104" height="54" rx="8" fill="#fff" stroke="#0B7A5E"/><text x="314" y="74" text-anchor="middle">Assess &amp;</text><text x="314" y="89" text-anchor="middle">decide</text>
-    <rect x="386" y="50" width="120" height="54" rx="8" fill="#0B7A5E"/><text x="446" y="74" text-anchor="middle" fill="#fff" font-weight="600">Approved +</text><text x="446" y="89" text-anchor="middle" fill="#fff" font-weight="600">contract signed</text>
+    <rect x="14" y="50" width="104" height="54" rx="8" fill="#fff" stroke="#5F4B8B"/><text x="66" y="74" text-anchor="middle">Receive &amp;</text><text x="66" y="89" text-anchor="middle">check case</text>
+    <rect x="138" y="50" width="104" height="54" rx="8" fill="#fff" stroke="#5F4B8B"/><text x="190" y="74" text-anchor="middle">Verify</text><text x="190" y="89" text-anchor="middle">identity</text>
+    <rect x="262" y="50" width="104" height="54" rx="8" fill="#fff" stroke="#5F4B8B"/><text x="314" y="74" text-anchor="middle">Assess &amp;</text><text x="314" y="89" text-anchor="middle">decide</text>
+    <rect x="386" y="50" width="120" height="54" rx="8" fill="#5F4B8B"/><text x="446" y="74" text-anchor="middle" fill="#fff" font-weight="600">Approved +</text><text x="446" y="89" text-anchor="middle" fill="#fff" font-weight="600">contract signed</text>
     <rect x="14" y="225" width="104" height="54" rx="8" fill="#fff" stroke="#999"/><text x="66" y="249" text-anchor="middle">Receive</text><text x="66" y="264" text-anchor="middle">stock</text>
     <rect x="138" y="225" width="104" height="54" rx="8" fill="#fff" stroke="#999"/><text x="190" y="249" text-anchor="middle">Store &amp;</text><text x="190" y="264" text-anchor="middle">count</text>
-    <rect x="386" y="225" width="120" height="54" rx="8" fill="#fff" stroke="#0B7A5E" stroke-width="2"/><text x="446" y="249" text-anchor="middle">Release</text><text x="446" y="264" text-anchor="middle">device</text>
+    <rect x="386" y="225" width="120" height="54" rx="8" fill="#fff" stroke="#5F4B8B" stroke-width="2"/><text x="446" y="249" text-anchor="middle">Release</text><text x="446" y="264" text-anchor="middle">device</text>
     <rect x="262" y="225" width="104" height="54" rx="8" fill="#fff" stroke="#999"/><text x="314" y="249" text-anchor="middle">Returns &amp;</text><text x="314" y="264" text-anchor="middle">trade-ins</text>
   </g>
-  <g stroke="#0B7A5E" stroke-width="1.6" fill="none" marker-end="url(#a)">
+  <g stroke="#5F4B8B" stroke-width="1.6" fill="none" marker-end="url(#a)">
     <path d="M118 77 H136"/><path d="M242 77 H260"/><path d="M366 77 H384"/>
     <path d="M446 104 V223"/>
   </g>
   <g stroke="#999" stroke-width="1.4" fill="none" marker-end="url(#b)"><path d="M118 252 H136"/></g>
-  <rect x="452" y="148" width="62" height="28" rx="14" fill="#fff" stroke="#0B7A5E"/><text x="483" y="166" font-size="10.5" text-anchor="middle" fill="#085F49" font-weight="600">handoff</text>
+  <rect x="452" y="148" width="62" height="28" rx="14" fill="#fff" stroke="#5F4B8B"/><text x="483" y="166" font-size="10.5" text-anchor="middle" fill="#4A3870" font-weight="600">handoff</text>
   <defs>
-    <marker id="a" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#0B7A5E"/></marker>
+    <marker id="a" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#5F4B8B"/></marker>
     <marker id="b" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#999"/></marker>
   </defs>
 </svg><p style="font-size:13px;color:var(--muted);margin-top:8px">Simplified view. Details of the organisation are kept private.</p></div>
